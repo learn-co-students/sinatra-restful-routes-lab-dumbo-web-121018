@@ -3,5 +3,6 @@
 <% @recipes.each do |recipe|%>
 
 <%= "#{recipe.name}" %> <br/>
+<p><a href="<%= "/recipes/#{recipe.id}" %>">Recipe <%="#{recipe.id}"%></a></p><br/>
 
 <% end %>
