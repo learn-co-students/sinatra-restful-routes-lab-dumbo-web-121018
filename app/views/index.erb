@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>Index page</title>
+</head>
+<body>
+
+  <% Recipe.all.each do |recipe| %>
+    <p><a href="/recipes/<%= recipe.id %>"><%= recipe.id %></a>: <%= "#{recipe.name}, #{recipe.ingredients}, #{recipe.cook_time} minutes" %></p>
+    <p></p>
+  <% end %>
+
+<p><a href="/recipes/new">New recipe</a></p>
+</body>
+</html>
