@@ -1,0 +1,6 @@
+Show pagefor single recipe!
+<%=@recipe.name%>
+<form action = "/recipes/<%= @recipe.id %>/delete" metthod = "post">
+  <input id = "hidden" type = "hidden" name = "_method" value = "delete">
+  <input type = "submit" value = "delete">
+</form>
